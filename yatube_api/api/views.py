@@ -43,7 +43,6 @@ class PostViewSet(viewsets.ModelViewSet):
 class CommentViewSet(viewsets.ModelViewSet):
     """ViewSet для работы с Комментариями."""
 
-    queryset = Comment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = (AuthorPermission, IsAuthenticatedOrReadOnly)
 
