@@ -13,7 +13,7 @@ from .serializers import (
     CommentSerializer,
     FollowSerializer
 )
-from posts.models import Comment, Group, Post
+from posts.models import Group, Post
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
