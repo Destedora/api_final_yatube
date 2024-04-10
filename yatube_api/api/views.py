@@ -73,7 +73,7 @@ class FollowViewSet(
     search_fields = ('following__username',)
 
     def get_queryset(self):
-        """Получает запрос для списка подписчиков пользователя.."""
+        """Получает запрос для списка подписчиков пользователя."""
         return self.request.user.subscribers.all()
 
     def perform_create(self, serializer):
